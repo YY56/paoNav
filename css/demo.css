@@ -1,0 +1,115 @@
+*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	a{
+
+		text-decoration: none;
+		color: rgba(0,0,0,.6);
+
+	}
+	body{
+		background: #900;
+	}
+	.nav{
+		width: 600px;
+		margin: 250px auto 0;
+	}
+	.nav ul li{
+		float: left;
+		
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 20px;
+
+	}
+	.nav ul li a {
+		position: relative;
+		display: inline-block;
+		padding: 5px 20px;
+		-webkit-transition:all .5s;
+
+	}
+	.nav ul li span{
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -30px;
+		margin-bottom: 14px;
+		width: 60px;
+		height: 60px;
+		background: #fff;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 60px;
+		opacity: 0;
+		-webkit-transition:all .2s;
+	}
+	.nav ul li span:after{
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -8px;
+		margin-top: -3px;
+		content: '';
+		display: block;
+		width: 0;
+		height: 0;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 12px solid #fff;
+	}
+	.bubble i{
+		color: #900;
+		opacity: 0;
+		-webkit-transition:all .2s;
+	}
+	.nav ul li a:hover{
+		color: #fff;
+	}
+	.nav ul li a:hover span{
+		opacity:1;
+		-webkit-transform:translateY(0px) rotate(0deg)
+	}
+	.nav ul li a:hover span i{
+		opacity:1;
+		-webkit-transform:translateY(0px) rotate(0deg)
+	}
+	.nav ul li:nth-child(1) span{
+		-webkit-transform:translateY(10px) rotate(30deg);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(1) span i{
+		-webkit-transform:translateY(15px) rotate(40deg);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(2) span{
+		-webkit-transform:translateY(10px) rotateX(30deg);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(2) span i{
+		-webkit-transform:translateY(15px);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(3) span{
+		-webkit-transform:rotateY(90deg);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(3) span i{
+		-webkit-transform:rotateY(90deg) scale(.1) ;	
+	}
+	.nav ul li:nth-child(4) span{
+		-webkit-transform:translateY(-15px);
+		-webkit-transform-origin:center bottom;
+	}
+	.nav ul li:nth-child(4) span i{
+		-webkit-transform:translateY(15px);
+		-webkit-transform-origin:center bottom;
+	
+	}
+	.nav ul li:nth-child(5) span{
+		-webkit-transform:scale(.1);
+		-webkit-transform-origin:center bottom;
+	}
+	
